@@ -143,6 +143,10 @@ p{
     color: var(--blanco);
 }
 
+.navegacion__enlace:hover{
+  font-size: 2.2rem;
+}
+
 @media (min-width: 768px) {
    .navegacion{
     display: flex;
