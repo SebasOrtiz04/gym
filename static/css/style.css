@@ -40,13 +40,18 @@ a{
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5{
-    font-family: var(--fuenteGym);
+h1{
+  font-family: var(--fuenteGym);
+  color: var(--blanco);
+}
+
+h2, h3, h4, h5{
+    font-family: var(--fuenteParrafos);
     color: var(--blanco);
 }
 
 p{
-  font-family: var(--fuentePrincipal);
+  font-family: var(--fuenteParrafos);
 }
 
 
