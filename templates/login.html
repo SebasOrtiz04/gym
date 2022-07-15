@@ -1,14 +1,14 @@
 {%extends "layout.html"%}
 {% block content %}
 <main>
-<div class="contenedor_is">
+<div class="contenedor_is centrar-texto">
 <Section class="sombra iniciosesion">
     <h2>Iniciar sesion</h2>
-    <form action="#" method="post">
+    <form class="formulario-login" action="#" method="post">
       {{form.hidden_tag()}}
        <fieldset>
            
-           <legend>Ingresa tus datos</legend>
+           <legend></legend>
 
            <div class="inicioform">
         
@@ -43,7 +43,4 @@
 
 </main>
 
-<footer>
-<p>Todos los derechos reservados Juan Sebastian Ortiz Castro y Fernando Sanchez Ortega</p>
-</footer>
 {% endblock %}

@@ -1,14 +1,14 @@
 {%extends "layout.html"%}
 {% block content %}
 <main>
-<div class="contenedor_is">
+<div class="contenedor_is centrar-texto">
 <Section class="sombra iniciosesion">
     <h2>Registrate</h2>
-    <form action="" method="post">
+    <form class="formulario-login" action="" method="post">
         {{form.hidden_tag()}}
        <fieldset>
            
-           <legend>Ingresa tus datos</legend>
+           <legend></legend>
 
            <div class="inicioform">
         
@@ -16,13 +16,17 @@
           <!-- <label>Cuenta </label>-->
             {{form.email(class="form-control form-control-lg" , placeholder="Correo electrónico")}}
            </div>
-
+           
            <div class="campo">
             <!--<label>Contraseña </label>-->
             {{form.password(class="form-control form-control-lg" , placeholder="Contraseña")}}
            </div>
+
+           <div class="formulario__label">
+            <div><label>Debe contener una letra,una mayuscula y un numero por lo menos </label></div>
+           </div>
            <div class="campo">
-            <label>Debe contener una letra,una mayuscula y un numero por lo menos </label>
+            
             {{form.confirm_password(class="form-control form-control-lg" , placeholder="Confirma tu contraseña")}}
            </div>
            <div class="campo">
@@ -58,7 +62,4 @@
 
 </main>
 
-<footer>
-<p>Todos los derechos reservados Juan Sebastian Ortiz Castro y Fernando Sanchez Ortega</p>
-</footer>
 {% endblock %}

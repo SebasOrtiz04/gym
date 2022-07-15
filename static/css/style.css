@@ -417,3 +417,27 @@ p{
  }
  }
 
+ /* iniciar sesion */
+
+ .formulario-login fieldset{
+  border: none;
+  background-color: #1b3d41;
+    width: min(50rem, 95%);
+    margin: auto;
+    border-radius: 2rem;
+    padding: 2rem;
+ }
+
+ .campo label{
+  color: var(--blanco);
+ }
+
+ .campo a{
+  color: #a2d10c;
+ }
+
+ .formulario__label{
+  color:var(--blanco) ;
+  font-size: 1.2rem;
+ }
+
