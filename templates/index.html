@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Blog de cafe, initial-scale=1.0">
     <title>MyGym</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
 
         <div class="contenedor ">
             <div class="barra">
-                <a class="logo no-margin centrar-texto" href="index.html">
+                <a class="logo no-margin centrar-texto" href="{{url_for('index')}}">
                     <h1 clas0s="logo__nombre">
                         Alpha Boxing & 
                     </h1>
@@ -26,9 +26,9 @@
     
 
                 <nav class="navegacion">
-                    <a href="tienda.html" class="navegacion__enlace">TIENDA</a>
-                    <a href="nosotros.html" class="navegacion__enlace">NOSOTROS</a>
-                    <a href="nosotros.html" class="navegacion__enlace">INICIAR SESION</a>
+                    <a href="{{url_for('tienda')}}" class="navegacion__enlace">TIENDA</a>
+                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">NOSOTROS</a>
+                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">INICIAR SESION</a>
                 </nav>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <h3>Nuestra Sucursal</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/sucursal.jpg" alt="imagen blog">
+                    <img src="static/img/sucursal.jpg" alt="imagen blog">
                 </div>
                 <div class="etrada__contenido">
                     <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus. Praesent laoreet tortor vel mauris suscipit convallis. Duis

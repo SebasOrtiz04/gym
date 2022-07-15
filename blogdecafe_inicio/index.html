@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Blog de cafe, initial-scale=1.0">
     <title>Blog de café</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('blogdecafe_inicio',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('blogdecafe_inicio',filename='css/style.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +14,7 @@
 
         <div class="contenedor">
             <div class="barra">
-                <a class="logo no-margin centrar-texto" href="index.html">
+                <a class="logo no-margin centrar-texto" href="{{url_for('index')}}">
                     <h1 class="logo__nombre">Blog <span class="logo__bolt">DeCafé</span>
                       </h1>
                 </a>
