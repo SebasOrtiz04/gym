@@ -6,7 +6,7 @@ conexionBase={
     'database':'d980n9p50k9q7f'
 }
 correoEnvio={
-    'elQueEnvia':'fernandosanchezor@gmail.com'
+    'elQueEnvia':'mislti.ventas@gmail.com'
 }
 Config={
     'SECRET_KEY':'cae9474ef7790728e02016cc2f3ff84f'

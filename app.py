@@ -122,6 +122,8 @@ def login():
                 if logged_user.contra:
                     conectado='conectado'
                     print(conectado)
+                    flash('estatus conectado')
+                    print('estatus conectado')
                     return redirect(url_for('index',conectado=conectado))
                 else:
                     flash('Contraseña no valida')
