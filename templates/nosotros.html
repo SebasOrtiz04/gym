@@ -1,46 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>MyGym</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css')}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
-</head>
-<body>
-    <header class="header">
-
-        <div class="contenedor ">
-            <div class="barra">
-                <a class="logo no-margin centrar-texto" href="{{url_for('index')}}">
-                    <h1 clas0s="logo__nombre">
-                        Alpha Boxing & 
-                    </h1>
-                    <h1 class="logo__bolt">
-                        FITNESS CENTER
-                    </h1>
-                </a>
-    
-
-                <nav class="navegacion">
-                    <a href="{{url_for('tienda')}}" class="navegacion__enlace">TIENDA</a>
-                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">NOSOTROS</a>
-                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">INICIAR SESION</a>
-                </nav>
-            </div>
-        </div>
-
-
-        <div class="header__texto">
-            <h2 class="no-margin">PROXIMAMENTE</h2>
-            <p class="no-margin"></p>
-        </div>
-    </header>
+{%extends "layout.html"%}
+{% block content %}
     <main class="contenedor">
 
         <div class="ContenedorNosotros centrar-texto">
@@ -96,23 +55,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin nec 
         
     </main>
 
-    <footer class="footer">
-        <div class="footer__derechos centrar-texto">
-            <h5>Todos los derechos reservados</h5>
-        </div>        
-        <div class="footer__contacto centrar-texto">
-            <div><h4>Contacto</h4></div>
-            <div class="footer__contacto-dato">
-                <div>
-                    <h5>Cel:</h5>
-                    <h5> 22 22 22 22 22</h5>
-                </div>
-                <div>
-                    <h5>Correro:</h5>
-                    <h5>informes@gym.com.mx</h5>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
 </body>
 </html>
+{% endblock %}
