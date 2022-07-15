@@ -18,7 +18,7 @@ html{
 }
 
 body{
-    font-family: var(--fuenteGym);
+    font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 2;
     background: linear-gradient(#0b1825, #38373c);
@@ -44,6 +44,11 @@ h1, h2, h3, h4, h5{
     font-family: var(--fuenteGym);
     color: var(--blanco);
 }
+
+p{
+  font-family: var(--fuentePrincipal);
+}
+
 
 h1{
     font-size: 4.8rem;
