@@ -441,3 +441,14 @@ p{
   font-size: 1.2rem;
  }
 
+ .boton{
+  background-color: #a2d10c;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border: none;
+  color: var(--blanco);
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
