@@ -1,0 +1,64 @@
+{%extends "layout.html"%}
+{% block content %}
+<main>
+<div class="contenedor_is">
+<Section class="sombra iniciosesion">
+    <h2>Registrate</h2>
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+       <fieldset>
+           
+           <legend>Ingresa tus datos</legend>
+
+           <div class="inicioform">
+        
+           <div class="campo">
+          <!-- <label>Cuenta </label>-->
+            {{form.email(class="form-control form-control-lg" , placeholder="Correo electrónico")}}
+           </div>
+
+           <div class="campo">
+            <!--<label>Contraseña </label>-->
+            {{form.password(class="form-control form-control-lg" , placeholder="Contraseña")}}
+           </div>
+           <div class="campo">
+            <!--<label>Contraseña </label>-->
+            {{form.confirm_password(class="form-control form-control-lg" , placeholder="Confirma tu contraseña")}}
+           </div>
+           <div class="campo">
+            <!--<label>Contraseña </label>-->
+            {{form.numberphone(class="form-control form-control-lg" , placeholder="Tu numero de teléfono (incluyendo +52)")}}
+           </div>
+           <div class="campo">
+            <!--<label>Contraseña </label>-->
+            {{form.Nombre(class="form-control form-control-lg" , placeholder="Ingresa tu nombre")}}
+           </div>
+           <div class="campo">
+            <!--<label>Contraseña </label>-->
+            {{form.Genero(class="form-control form-control-lg" , placeholder="ingresa tu Genero")}}
+           </div>
+
+
+           <div>
+            {{form.submit(class="btn btn-outline-info" , class="boton" , type="submit" , value="Registrarme")}}
+           </div>
+
+
+           <div class="campo cuenta">
+            <label>¿Ya tienes una cuenta?</label>
+            <a class="ml-2" href="{{url_for('login')}}">Ingresar con mi cuenta</a> 
+           </div>
+
+        </div>
+
+       </fieldset> 
+    </form>
+</Section>
+</div>
+
+</main>
+
+<footer>
+<p>Todos los derechos reservados Juan Sebastian Ortiz Castro y Fernando Sanchez Ortega</p>
+</footer>
+{% endblock %}

@@ -1,0 +1,49 @@
+{%extends "layout.html"%}
+{% block content %}
+<main>
+<div class="contenedor_is">
+<Section class="sombra iniciosesion">
+    <h2>Iniciar sesion</h2>
+    <form action="#" method="post">
+      {{form.hidden_tag()}}
+       <fieldset>
+           
+           <legend>Ingresa tus datos</legend>
+
+           <div class="inicioform">
+        
+           <div class="campo">
+          <!-- <label>Cuenta </label>-->
+          {{form.email(placeholder="Correo electrónico")}}
+        </div>
+           <div class="campo">
+            <!--<label>Contraseña </label>-->
+            {{form.password(placeholder="Contraseña")}}
+           </div>
+
+           <div>
+            {{form.submit(class="boton" , type="submit" , value="Iniciar sesión")}}
+           </div>
+
+           <div class="campo">
+            <a href="{{url_for('olvide')}}">Olvidé mi contraseña</a> 
+           </div>
+
+           <div class="campo cuenta">
+            <label>¿No tienes cuenta?</label>
+            <a class="ml-2" href="{{url_for('register')}}">Crear cuenta</a> 
+           </div>
+
+        </div>
+
+       </fieldset> 
+    </form>
+</Section>
+</div>
+
+</main>
+
+<footer>
+<p>Todos los derechos reservados Juan Sebastian Ortiz Castro y Fernando Sanchez Ortega</p>
+</footer>
+{% endblock %}
