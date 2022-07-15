@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
+
+        <div class="header__sombra">
 
         <div class="contenedor ">
             <div class="barra">
@@ -30,8 +32,8 @@
                 <nav class="navegacion">
                     <a href="{{url_for('tienda')}}" class="navegacion__enlace">TIENDA</a>
                     <a href="{{url_for('nosotros')}}" class="navegacion__enlace">NOSOTROS</a>
-                    <a href="{{url_for('login')}}" class="navegacion__enlace">Log in</a>
-                    <a href="{{url_for('register')}}" class="navegacion__enlace">Sing in</a>
+                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">Log in</a>
+                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">Sing in</a>
                 </nav>
             </div>
         </div>
@@ -41,6 +43,7 @@
             <h2 class="no-margin">PROXIMAMENTE</h2>
             <p class="no-margin"></p>
         </div>
+    </div>
     </header>
 
 <div class="row">
