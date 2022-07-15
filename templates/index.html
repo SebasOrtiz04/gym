@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Blog de cafe, initial-scale=1.0">
-    <title>MyGym</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body class="centrar-texto">
-    <header class="header">
-
-        <div class="contenedor ">
-            <div class="barra">
-                <a class="logo no-margin centrar-texto" href="{{url_for('index')}}">
-                    <h1 clas0s="logo__nombre">
-                        Alpha Boxing & 
-                    </h1>
-                    <h1 class="logo__bolt">
-                        FITNESS CENTER
-                    </h1>
-                </a>
-    
-
-                <nav class="navegacion">
-                    <a href="{{url_for('tienda')}}" class="navegacion__enlace">TIENDA</a>
-                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">NOSOTROS</a>
-                    <a href="{{url_for('nosotros')}}" class="navegacion__enlace">INICIAR SESION</a>
-                </nav>
-            </div>
-        </div>
-
-
-        <div class="header__texto">
-            <h2 class="no-margin">PROXIMAMENTE</h2>
-            <p class="no-margin"></p>
-        </div>
-    </header>
+{%extends "layout.html"%}
+{% block content %}
 
     <div class="contenedor contenido-principal contenedor__inicio">
         <main class="blog">
@@ -79,6 +40,7 @@
     </div>
     </div>
 
+<<<<<<< HEAD
     <footer class="footer">
         <div class="footer__derechos centrar-texto">
             <h5>Todos los derechos reservados</h5>
@@ -97,6 +59,9 @@
             </div>
         </div>
     </footer>
+=======
+>>>>>>> 10549897471de8a8ad05e0dc32913db154802ed0
 </body>
 
 </html>
+{% endblock %}
